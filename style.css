@@ -1,0 +1,359 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Titillium Web", system-ui;
+    box-sizing: border-box;
+}
+#main {
+    width: 100%;
+    height: 100vh; /* Corrected from hv to vh */
+    position: relative;
+}
+nav {
+    margin-left: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    width: 70px;
+    margin-left: 20px;
+}
+.list-items {
+    list-style: none;
+    display: inline;
+    margin-right: 100px;
+}
+.list {
+    color: black;
+    font-weight: 600;
+    text-decoration: none;
+}
+.list:hover {
+    color: red;
+    text-decoration: underline;
+}
+.home-content {
+    margin-left: 50px;
+    margin-top: 150px; /* Adjusted for better alignment */
+    margin-right: 40%; /* Reduced for better responsiveness */
+}
+#heading {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playfair Display", cursive;
+}
+#romanolf{
+    color: orange;
+    font-family: "Playfair Display", cursive;
+
+}
+#user-details {
+    line-height: 1.5;
+    font-family: "Playfair Display", cursive;
+}
+#download {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 20px;
+    margin-top: 30px;
+    font-family: "Jacques Francois Shadow", serif;
+}
+#download:hover{
+    color: black;
+    background-color: orange;
+    font-weight: 600;
+}
+
+.img {
+    width: 45%;
+    height: 68%;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+.grp1 {
+    position: absolute;
+    height: 500px; /* Adjusted for responsiveness */
+    bottom: 0;
+    right: 25%;
+    transform: translateX(-25%);
+}
+
+#shape {
+    position: absolute;
+    left: 0; /* Initial position */
+    transition: all 1s ease; /* Smooth transition for position */
+}
+
+#lady {
+    position: absolute;
+    top: 0;  /* Initial position */
+    right: 0;
+    transition: all 1s ease; /* Smooth transition for position */
+}
+
+.img #shape, .img #lady {
+    bottom: 0; /* Initial position */
+}
+
+/* Hover state for smooth transitions */
+.img:hover #shape {
+    left: 200px; /* Move shape horizontally on hover */
+}
+
+.img:hover #lady {
+    top: 60px;   /* Move lady vertically on hover */
+    right: 60px; /* Move lady horizontally on hover */
+}
+
+
+
+#about {
+    margin: 15% 8% 0px 8%;
+}
+.sectionHead {
+    font-size: 30px;
+    text-align: center;
+}
+#subHead {
+    font-size: 25px;
+    color: green;
+}
+.aboutBody {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    align-items: center;
+}
+
+.img1 {
+    width: 88%;
+}
+
+.aboutContent {
+    font-size: 20px;
+    text-align: justify;
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info{
+    margin-top: 1.3rem;
+}
+.infoBox{
+    margin-bottom: 10px;
+}
+.infoBox>span{
+    margin-left: 1rem;
+}
+
+.myskill {
+    width: 100%; /* Adjusted for better fit */
+    max-width: 500px; /* Added max-width */
+}
+#skill{
+    margin: 8px 8px 0px 8px;
+
+}
+.skillContent {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+
+}
+.bars{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: 1rem 0px;
+    margin-left: 50px;
+
+}
+.mainHead, .barPersentage{
+    font-weight: 500px;
+    font-size: 1.3rem;
+}
+.baseBar{
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+    background-color: black;
+    border-radius: 80px;
+    
+}
+.htmlBar{
+    background-color: orange;
+    width: 89%;
+}
+.cssBar{
+    background-color: orange;
+    width: 94%;
+}
+.reactBar{
+    background-color: orange;
+    width: 66%;
+}
+.jsBar{
+    background-color: orange;
+    width: 72%;
+}
+.Skillimage{
+    margin-left: 30px;
+
+}
+#Contact{
+    margin: 8%  8%  0px 8% ;
+}
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 5%;
+    margin-left: 2cqw;
+}
+.icon{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+    margin-top: 2.1px;
+    margin-left: 0.9px;
+    
+}
+.icon:hover{
+    background: linear-gradient(259deg, rgb(255, 0, 0) 5.65%, rgb(255, 213, 0) 100.00%);
+}
+.brands:hover{
+    color: white;
+    animation: rotate 3s;
+}
+@keyframes rotate{
+
+    0%{
+        transform: rotate(40deg);
+    }
+    20%{
+        transform: rotate(-40deg);
+    }
+    40%{
+        transform: rotate(40deg);
+    }
+    60%{
+        transform: rotate(-40deg);
+    }
+    80%{
+        transform: rotate(20deg);
+    }
+    90%{
+        transform: rotate(-20deg);
+    }
+    95%{
+        transform: rotate(10deg);
+    }
+
+    100%{
+        transform: rotate(-10deg);
+    }
+}
+
+#copyright{
+    text-align: center;
+    font-weight: 600px;
+    margin-top: -40px;
+
+}
+.uparrow{
+    float: right;
+    margin-top: -30px;
+    margin-right: 30px;
+}
+html{
+    scroll-behavior: smooth;
+}
+p{
+    font-family: "Pacifico", cursive;
+
+}
+h2{
+    font-family: "Luckiest Guy", cursive;
+    animation: an;
+}
+span{
+    font-family: "Jacques Francois Shadow", serif;
+}
+a{
+    font-family: "Jacques Francois Shadow", serif;
+}
+.logo{
+    margin-top: 15px;
+}
+.logo{
+    animation: rotate1 5s;
+}
+@keyframes rotate1{
+
+    10%{
+        transform: rotate(360deg );
+
+    }
+    20%{
+        
+        transform: rotate(360deg );
+    }
+    30%{
+        transform: rotate(360deg );
+        
+    }
+    40%{
+        transform: rotate(360deg );
+        
+    }
+    50%{
+        
+        transform: rotate(360deg );
+    }
+    60%{
+        
+        transform: rotate(360deg );
+    }
+    70%{
+        transform: rotate(360deg );
+    }
+}
+h1{
+    font-size: 800px;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    
+}
+::-webkit-scrollbar-track{
+    background-color: white;
+
+}
+::-webkit-scrollbar-thumb{
+  
+    background-color: orange;
+    border-radius: 20px;
+}
